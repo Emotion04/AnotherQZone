@@ -1,0 +1,12 @@
+{
+  "name": "qzone-archive",
+  "version": "1.0.0",
+  "description": "个人珍藏数字信息馆 —— QQ空间说说与日志的极简黑白展示",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "node serve.mjs",
+    "dev": "node serve.mjs"
+  },
+  "private": true
+}

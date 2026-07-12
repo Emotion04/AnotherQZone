@@ -1,0 +1,8 @@
+[
+  { "c": "今夕是何年", "t": "14:24", "ts": 1783664647, "u": ["https://picsum.photos/seed/qz1/600/600"] },
+  { "c": "这是一条示例说说，全部为编造的假数据，用来演示界面。\n把你自己的 moods-all.json 放进项目根目录后，示例就会被真实内容取代。", "t": "22:10", "ts": 1720000000, "u": [] },
+  { "c": "九图演示：黑白极简馆里的照片画廊长这样", "t": "18:40", "ts": 1690000000, "u": ["https://picsum.photos/seed/a/500", "https://picsum.photos/seed/b/500", "https://picsum.photos/seed/c/500", "https://picsum.photos/seed/d/500"] },
+  { "c": "", "t": "09:05", "ts": 1650000000, "u": ["https://picsum.photos/seed/lone/700/500"] },
+  { "c": "把心沉下来，做点小而美的东西。", "t": "20:00", "ts": 1600000000, "u": [] },
+  { "c": "示例：这条带一点心情词 [em]e100[/em] 会被自动清除", "t": "11:11", "ts": 1560000000, "u": ["https://picsum.photos/seed/em/480"] }
+]

@@ -1,0 +1,32 @@
+# ────────────────────────────────────────────
+#  私人隐私数据 —— 绝不公开推送
+#  （说说 / 日志正文 / 图片 / 他人姓名评论访客 均在其中）
+# ────────────────────────────────────────────
+moods-all.json
+moods-ai/
+blogs-ai/
+site/data.js
+site/media/
+download-failures.json
+
+# 其它可能的数据导出
+*.qzone.json
+exports/
+
+# ────────────────────────────────────────────
+#  运行时 / 临时 / 本地
+# ────────────────────────────────────────────
+node_modules/
+_verify/
+*.log
+*.tmp
+_smoke.mjs
+_p*.html
+_probe*.html
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/

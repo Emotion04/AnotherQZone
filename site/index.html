@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>珍藏数字信息馆</title>
+  <meta name="description" content="QQ空间说说与日志的个人数字档案馆" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0a'/%3E%3Crect x='9' y='9' width='14' height='14' fill='%23fff'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 顶栏 -->
+  <header class="masthead">
+    <div class="mast-inner">
+      <a class="brand" href="#" data-nav="overview">
+        <span class="brand-mark">◼</span>
+        <span class="brand-text">珍藏数字信息馆</span>
+      </a>
+      <div class="mast-actions">
+        <label class="search" id="searchWrap">
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2"/></svg>
+          <input id="search" type="search" placeholder="搜索……" autocomplete="off" spellcheck="false" />
+        </label>
+        <button class="icon-btn" id="cleanToggle" title="简洁模式：隐藏赞 / 评论 / 访客" aria-label="简洁模式">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span class="clean-slash"></span>
+        </button>
+        <button class="icon-btn" id="themeToggle" title="切换明暗" aria-label="切换明暗">
+          <span class="theme-dot"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主视觉 -->
+  <section class="hero">
+    <h1 class="hero-title">珍藏数字<span class="thin">信息馆</span></h1>
+    <p class="hero-sub">一个人的互联网痕迹 · QQ空间说说与日志的时光归档</p>
+    <p class="hero-meta" id="heroMeta"></p>
+  </section>
+
+  <!-- Tab 导航 -->
+  <nav class="tabs" id="tabs">
+    <button class="tab is-active" data-nav="overview">概览</button>
+    <button class="tab" data-nav="timeline">时间轴</button>
+    <button class="tab" data-nav="moods">说说</button>
+    <button class="tab" data-nav="blogs">日志</button>
+    <span class="tab-underline" id="tabUnderline"></span>
+  </nav>
+
+  <!-- 内容 -->
+  <main class="views" id="views">
+    <section class="view" id="view-overview"></section>
+    <section class="view" id="view-timeline" hidden></section>
+    <section class="view" id="view-moods" hidden></section>
+    <section class="view" id="view-blogs" hidden></section>
+  </main>
+
+  <footer class="foot">
+    <span id="footMeta"></span>
+    <span class="foot-sep">·</span>
+    <span>极简黑白 · 数据实时同步</span>
+  </footer>
+
+  <!-- 日志阅读浮层 -->
+  <div class="reader" id="reader" hidden>
+    <div class="reader-backdrop" data-close></div>
+    <article class="reader-panel" id="readerPanel"></article>
+  </div>
+
+  <!-- 图片灯箱 -->
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox-backdrop" data-close></div>
+    <button class="lb-close" data-close aria-label="关闭">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="上一张">‹</button>
+    <figure class="lb-figure">
+      <img id="lbImg" alt="" />
+      <figcaption class="lb-cap" id="lbCap"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="下一张">›</button>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
