@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "珍藏数字信息馆 · 同步器",
+  "version": "1.0",
+  "description": "将 QQ空间说说同步至本地数字信息馆的桥梁",
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "permissions": ["cookies"],
+  "host_permissions": ["https://user.qzone.qq.com/*"],
+  "externally_connectable": {
+    "matches": ["http://localhost:*/*", "http://127.0.0.1:*/*"]
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
